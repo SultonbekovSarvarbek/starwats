@@ -1,0 +1,38 @@
+// 768
+@media (max-width: 768px) {
+  .personal {
+    &-cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+// 676
+@media (max-width: 676px) {
+  .personal {
+    &-cards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    &-pagination {
+      &__prevnext {
+        padding: 10px;
+        margin: 5px 0;
+        display: block;
+      }
+      &__pagnumber {
+        padding: 10px;
+      }
+    }
+  }
+  .person {
+    &-details {
+      flex-direction: column;
+      &__item {
+        margin-right: 0;
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}
